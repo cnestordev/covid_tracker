@@ -1,13 +1,66 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: #404b51;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.countryButton {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #555;
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+}
+
+.countryButton:hover {
+    cursor: pointer;
+    color: #999;
+}
+
+
+.ronaContainer {
+    background: #3e4549;
+    border: 1px solid transparent;
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+.ronaContainer h2 {
+    color: #c9c9c9;
+}
+
+.countryContainer, h2 {
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.caseContainer, .deathContainer {
+    border: 1px solid slategray;
+    border-radius: 3px;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.miscContainer {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0.2rem auto;
+    padding: 0.3rem;
+    display: flow-root;
+}
+
+.miscContainer p {
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    padding: 0.3rem 1rem;
+    float: left;
+    overflow: auto;
+}
+
+.miscContainer p:first-of-type {
+    margin-left: 26%;
 }

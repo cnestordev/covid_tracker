@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
 body {
     background: #404b51;
 }
 
+.mainContainer {
+    padding: 2% 21%;
+}
+
 .countryButton {
+    background: linear-gradient(100deg, #03a9f4, #03a9f4, #7cccf1, #03a9f4);
+    animation: gradient 5s linear infinite;
+    background-size: 200% 200%;
     border: 1px solid transparent;
     border-radius: 6px;
     color: #555;
@@ -22,8 +35,9 @@ body {
     background: #3e4549;
     border: 1px solid transparent;
     margin: 2rem auto;
+    margin-left: 0;
     padding-bottom: 1rem;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
@@ -63,4 +77,16 @@ body {
 
 .miscContainer p:first-of-type {
     margin-left: 26%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
